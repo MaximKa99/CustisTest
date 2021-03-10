@@ -8,7 +8,7 @@
 
 ### Как запустить?
 - Сначала клоним проект
-    `git clone url`
+    `git clone https://github.com/MaximKa99/CustisTest.git`
 - Потом переходим в папку с проектом в консоли
     `cd path/to/dir`
 - Запускаем :
@@ -19,4 +19,4 @@
 их в файл sorted
 
 ### Автор
-@url
+@https://github.com/MaximKa99
