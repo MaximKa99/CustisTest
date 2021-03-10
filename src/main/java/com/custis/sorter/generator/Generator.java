@@ -4,5 +4,5 @@ import java.io.OutputStream;
 
 public interface Generator {
 
-    void fillFile(int countOfStrokes, int maxLength, OutputStream out);
+    void fillFile(long countOfStrokes, int maxLength, OutputStream out);
 }

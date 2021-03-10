@@ -27,7 +27,7 @@ public class App
             Sorter sorter = new MergeSorter(sortHelper);
 
             System.out.println("Generating...");
-            generator.fillFile(200, 17, new FileOutputStream(source));
+            generator.fillFile(Long.valueOf(args[0]), Integer.valueOf(args[1]), new FileOutputStream(source));
             System.out.println("File has been generated");
             sorter.sort();
         } catch (IOException ex) {

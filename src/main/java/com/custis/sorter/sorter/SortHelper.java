@@ -178,7 +178,6 @@ public class SortHelper {
         }
     }
 
-
     public void CloseStreamsAfterSplitting() {
         try {
             this.tempAOut.close();

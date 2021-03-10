@@ -1,6 +1,6 @@
 package com.custis.sorter.generator;
 
-import com.custis.sorter.exception.CantWriteInFileException;
+import com.custis.sorter.exception.SmthGoneWrongException;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -8,7 +8,7 @@ import java.io.OutputStream;
 public class GeneratorImpl implements Generator{
 
     @Override
-    public void fillFile(int countOfStrokes, int maxLength, OutputStream out) {
+    public void fillFile(long countOfStrokes, int maxLength, OutputStream out) {
         if (countOfStrokes <= 0) {
             throw new IllegalArgumentException("countOfStrokes cannot be lesser or equal to zero");
         }
@@ -22,7 +22,7 @@ public class GeneratorImpl implements Generator{
                 byte[] line = generateRandomString(maxLength);
                 out.write(line);
             } catch (IOException ex) {
-                throw new CantWriteInFileException(ex);
+                throw new SmthGoneWrongException(ex);
             }
             i++;
         }

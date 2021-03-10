@@ -1,10 +1,24 @@
 package com.custis.sorter.sorter;
 
+import java.util.Comparator;
+
 public class MergeSorter implements Sorter{
     private SortHelper helper;
+    private Comparator<String> comparator;
 
     public MergeSorter(SortHelper helper) {
         this.helper = helper;
+        this.comparator = new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.compareTo(o2);
+            }
+        };
+    }
+
+    public MergeSorter(SortHelper helper, Comparator<String> comparator) {
+        this.helper = helper;
+        this.comparator = comparator;
     }
 
     @Override
