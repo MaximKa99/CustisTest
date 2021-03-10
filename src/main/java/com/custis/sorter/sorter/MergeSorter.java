@@ -83,7 +83,7 @@ public class MergeSorter implements Sorter{
             if (lineB == null) {
                 break;
             }
-            if (lineA.compareTo(lineB) < 0) {
+            if (comparator.compare(lineA, lineB) < 0) {
                 helper.writeStringToTarget(lineA);
                 lineA = null;
             } else {
