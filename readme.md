@@ -11,9 +11,9 @@
     `git clone url`
 - Потом переходим в папку с проектом в консоли
     `cd path/to/dir`
-- Запускаем
-    `mvn clean compile`
-    `mvn exec:java -Dexec.mainClass=com.custis.sorter.App -Dexec.args="amountOfStokes maxLengthOfSingleStroke"`
+- Запускаем :
+    - `mvn clean compile`
+  - `mvn exec:java -Dexec.mainClass=com.custis.sorter.App -Dexec.args="amountOfStokes maxLengthOfSingleStroke"`
 
 Приложение запустится, создаст файл source с рандомными строчками в соответсвии с переданными параметрами, а затем отсортирует
 их в файл sorted
