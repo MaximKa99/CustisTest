@@ -5,6 +5,11 @@ import com.custis.sorter.exception.SmthGoneWrongException;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * Класс, который помогает классу сортировщику взаимодействовать с файлами.
+ * Данный класс знает все про файлы, с которыми наша программа работает и
+ * следит за их состоянием.
+ */
 public class SortHelper {
     private File src;
     private File target;

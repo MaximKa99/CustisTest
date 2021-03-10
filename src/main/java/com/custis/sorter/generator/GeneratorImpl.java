@@ -5,6 +5,9 @@ import com.custis.sorter.exception.SmthGoneWrongException;
 import java.io.IOException;
 import java.io.OutputStream;
 
+/**
+ * Класс, заполняющий нам файл случайными данными
+ */
 public class GeneratorImpl implements Generator{
 
     @Override
